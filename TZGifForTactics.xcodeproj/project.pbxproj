@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630680B61F88A3900047828A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680B51F88A3900047828A /* AppDelegate.m */; };
+		630680B81F88A3900047828A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 630680B71F88A3900047828A /* GameScene.sks */; };
+		630680BA1F88A3900047828A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 630680B91F88A3900047828A /* Actions.sks */; };
+		630680BD1F88A3900047828A /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680BC1F88A3900047828A /* GameScene.m */; };
+		630680C01F88A3900047828A /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680BF1F88A3900047828A /* GameViewController.m */; };
+		630680C31F88A3900047828A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630680C11F88A3900047828A /* Main.storyboard */; };
+		630680C51F88A3900047828A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630680C41F88A3900047828A /* Assets.xcassets */; };
+		630680C81F88A3900047828A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630680C61F88A3900047828A /* LaunchScreen.storyboard */; };
+		630680CB1F88A3900047828A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680CA1F88A3900047828A /* main.m */; };
+		630680D51F88A3900047828A /* TZGifForTacticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680D41F88A3900047828A /* TZGifForTacticsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630680D11F88A3900047828A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630680A91F88A3900047828A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630680B01F88A3900047828A;
+			remoteInfo = TZGifForTactics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630680B11F88A3900047828A /* TZGifForTactics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZGifForTactics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630680B41F88A3900047828A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		630680B51F88A3900047828A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		630680B71F88A3900047828A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		630680B91F88A3900047828A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		630680BB1F88A3900047828A /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		630680BC1F88A3900047828A /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		630680BE1F88A3900047828A /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		630680BF1F88A3900047828A /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		630680C21F88A3900047828A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		630680C41F88A3900047828A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630680C71F88A3900047828A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		630680C91F88A3900047828A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630680CA1F88A3900047828A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630680D01F88A3900047828A /* TZGifForTacticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZGifForTacticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630680D41F88A3900047828A /* TZGifForTacticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZGifForTacticsTests.m; sourceTree = "<group>"; };
+		630680D61F88A3900047828A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630680AE1F88A3900047828A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630680CD1F88A3900047828A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630680A81F88A3900047828A = {
+			isa = PBXGroup;
+			children = (
+				630680B31F88A3900047828A /* TZGifForTactics */,
+				630680D31F88A3900047828A /* TZGifForTacticsTests */,
+				630680B21F88A3900047828A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		630680B21F88A3900047828A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630680B11F88A3900047828A /* TZGifForTactics.app */,
+				630680D01F88A3900047828A /* TZGifForTacticsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630680B31F88A3900047828A /* TZGifForTactics */ = {
+			isa = PBXGroup;
+			children = (
+				630680B41F88A3900047828A /* AppDelegate.h */,
+				630680B51F88A3900047828A /* AppDelegate.m */,
+				630680B71F88A3900047828A /* GameScene.sks */,
+				630680B91F88A3900047828A /* Actions.sks */,
+				630680BB1F88A3900047828A /* GameScene.h */,
+				630680BC1F88A3900047828A /* GameScene.m */,
+				630680BE1F88A3900047828A /* GameViewController.h */,
+				630680BF1F88A3900047828A /* GameViewController.m */,
+				630680C11F88A3900047828A /* Main.storyboard */,
+				630680C41F88A3900047828A /* Assets.xcassets */,
+				630680C61F88A3900047828A /* LaunchScreen.storyboard */,
+				630680C91F88A3900047828A /* Info.plist */,
+				630680CA1F88A3900047828A /* main.m */,
+			);
+			path = TZGifForTactics;
+			sourceTree = "<group>";
+		};
+		630680D31F88A3900047828A /* TZGifForTacticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				630680D41F88A3900047828A /* TZGifForTacticsTests.m */,
+				630680D61F88A3900047828A /* Info.plist */,
+			);
+			path = TZGifForTacticsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630680B01F88A3900047828A /* TZGifForTactics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630680D91F88A3900047828A /* Build configuration list for PBXNativeTarget "TZGifForTactics" */;
+			buildPhases = (
+				630680AD1F88A3900047828A /* Sources */,
+				630680AE1F88A3900047828A /* Frameworks */,
+				630680AF1F88A3900047828A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZGifForTactics;
+			productName = TZGifForTactics;
+			productReference = 630680B11F88A3900047828A /* TZGifForTactics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		630680CF1F88A3900047828A /* TZGifForTacticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630680DC1F88A3900047828A /* Build configuration list for PBXNativeTarget "TZGifForTacticsTests" */;
+			buildPhases = (
+				630680CC1F88A3900047828A /* Sources */,
+				630680CD1F88A3900047828A /* Frameworks */,
+				630680CE1F88A3900047828A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630680D21F88A3900047828A /* PBXTargetDependency */,
+			);
+			name = TZGifForTacticsTests;
+			productName = TZGifForTacticsTests;
+			productReference = 630680D01F88A3900047828A /* TZGifForTacticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630680A91F88A3900047828A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Tanz;
+				TargetAttributes = {
+					630680B01F88A3900047828A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					630680CF1F88A3900047828A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 630680B01F88A3900047828A;
+					};
+				};
+			};
+			buildConfigurationList = 630680AC1F88A3900047828A /* Build configuration list for PBXProject "TZGifForTactics" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630680A81F88A3900047828A;
+			productRefGroup = 630680B21F88A3900047828A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630680B01F88A3900047828A /* TZGifForTactics */,
+				630680CF1F88A3900047828A /* TZGifForTacticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630680AF1F88A3900047828A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630680C31F88A3900047828A /* Main.storyboard in Resources */,
+				630680B81F88A3900047828A /* GameScene.sks in Resources */,
+				630680C51F88A3900047828A /* Assets.xcassets in Resources */,
+				630680C81F88A3900047828A /* LaunchScreen.storyboard in Resources */,
+				630680BA1F88A3900047828A /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630680CE1F88A3900047828A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630680AD1F88A3900047828A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630680BD1F88A3900047828A /* GameScene.m in Sources */,
+				630680C01F88A3900047828A /* GameViewController.m in Sources */,
+				630680CB1F88A3900047828A /* main.m in Sources */,
+				630680B61F88A3900047828A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630680CC1F88A3900047828A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630680D51F88A3900047828A /* TZGifForTacticsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630680D21F88A3900047828A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630680B01F88A3900047828A /* TZGifForTactics */;
+			targetProxy = 630680D11F88A3900047828A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		630680C11F88A3900047828A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630680C21F88A3900047828A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		630680C61F88A3900047828A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630680C71F88A3900047828A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630680D71F88A3900047828A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		630680D81F88A3900047828A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		630680DA1F88A3900047828A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ786Y9SWT;
+				INFOPLIST_FILE = TZGifForTactics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Tanz.TZGifForTactics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630680DB1F88A3900047828A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ786Y9SWT;
+				INFOPLIST_FILE = TZGifForTactics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Tanz.TZGifForTactics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		630680DD1F88A3900047828A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ786Y9SWT;
+				INFOPLIST_FILE = TZGifForTacticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Tanz.TZGifForTacticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TZGifForTactics.app/TZGifForTactics";
+			};
+			name = Debug;
+		};
+		630680DE1F88A3900047828A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJ786Y9SWT;
+				INFOPLIST_FILE = TZGifForTacticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Tanz.TZGifForTacticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TZGifForTactics.app/TZGifForTactics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630680AC1F88A3900047828A /* Build configuration list for PBXProject "TZGifForTactics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630680D71F88A3900047828A /* Debug */,
+				630680D81F88A3900047828A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630680D91F88A3900047828A /* Build configuration list for PBXNativeTarget "TZGifForTactics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630680DA1F88A3900047828A /* Debug */,
+				630680DB1F88A3900047828A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630680DC1F88A3900047828A /* Build configuration list for PBXNativeTarget "TZGifForTacticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630680DD1F88A3900047828A /* Debug */,
+				630680DE1F88A3900047828A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630680A91F88A3900047828A /* Project object */;
+}
