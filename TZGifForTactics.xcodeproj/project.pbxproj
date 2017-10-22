@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		630680B61F88A3900047828A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680B51F88A3900047828A /* AppDelegate.m */; };
-		630680B81F88A3900047828A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 630680B71F88A3900047828A /* GameScene.sks */; };
-		630680BA1F88A3900047828A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 630680B91F88A3900047828A /* Actions.sks */; };
 		630680BD1F88A3900047828A /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680BC1F88A3900047828A /* GameScene.m */; };
 		630680C01F88A3900047828A /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680BF1F88A3900047828A /* GameViewController.m */; };
 		630680C31F88A3900047828A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630680C11F88A3900047828A /* Main.storyboard */; };
@@ -17,6 +14,13 @@
 		630680C81F88A3900047828A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630680C61F88A3900047828A /* LaunchScreen.storyboard */; };
 		630680CB1F88A3900047828A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680CA1F88A3900047828A /* main.m */; };
 		630680D51F88A3900047828A /* TZGifForTacticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630680D41F88A3900047828A /* TZGifForTacticsTests.m */; };
+		6336E7B11F9CD5BE00F5B15D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6336E7AA1F9CD5BE00F5B15D /* Actions.sks */; };
+		6336E7B21F9CD5BE00F5B15D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E7AC1F9CD5BE00F5B15D /* AppDelegate.m */; };
+		6336E7B31F9CD5BE00F5B15D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6336E7AD1F9CD5BE00F5B15D /* GameScene.sks */; };
+		6336E7BC1F9CD63000F5B15D /* TZTacticsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E7B51F9CD62F00F5B15D /* TZTacticsController.m */; };
+		6336E7BD1F9CD63000F5B15D /* TZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E7B71F9CD63000F5B15D /* TZBaseViewController.m */; };
+		6336E7BE1F9CD63000F5B15D /* TZLeftSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E7BA1F9CD63000F5B15D /* TZLeftSettingController.m */; };
+		6336E7BF1F9CD63000F5B15D /* TZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E7BB1F9CD63000F5B15D /* TZHomeViewController.m */; };
 		EACADE712C74343925059C71 /* libPods-TZGifForTactics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59318C9CC28460C7E51F1D0E /* libPods-TZGifForTactics.a */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +39,6 @@
 		59318C9CC28460C7E51F1D0E /* libPods-TZGifForTactics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TZGifForTactics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBFEBF3B35B1E3FDA982EE6 /* Pods-TZGifForTactics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZGifForTactics.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZGifForTactics/Pods-TZGifForTactics.release.xcconfig"; sourceTree = "<group>"; };
 		630680B11F88A3900047828A /* TZGifForTactics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZGifForTactics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		630680B41F88A3900047828A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		630680B51F88A3900047828A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		630680B71F88A3900047828A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		630680B91F88A3900047828A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		630680BB1F88A3900047828A /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		630680BC1F88A3900047828A /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		630680BE1F88A3900047828A /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -51,6 +51,19 @@
 		630680D01F88A3900047828A /* TZGifForTacticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZGifForTacticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		630680D41F88A3900047828A /* TZGifForTacticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZGifForTacticsTests.m; sourceTree = "<group>"; };
 		630680D61F88A3900047828A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6336E7AA1F9CD5BE00F5B15D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		6336E7AB1F9CD5BE00F5B15D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6336E7AC1F9CD5BE00F5B15D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6336E7AD1F9CD5BE00F5B15D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6336E7B41F9CD62F00F5B15D /* TZTacticsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTacticsController.h; sourceTree = "<group>"; };
+		6336E7B51F9CD62F00F5B15D /* TZTacticsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTacticsController.m; sourceTree = "<group>"; };
+		6336E7B61F9CD62F00F5B15D /* TZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZHomeViewController.h; sourceTree = "<group>"; };
+		6336E7B71F9CD63000F5B15D /* TZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZBaseViewController.m; sourceTree = "<group>"; };
+		6336E7B81F9CD63000F5B15D /* TZLeftSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLeftSettingController.h; sourceTree = "<group>"; };
+		6336E7B91F9CD63000F5B15D /* TZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZBaseViewController.h; sourceTree = "<group>"; };
+		6336E7BA1F9CD63000F5B15D /* TZLeftSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLeftSettingController.m; sourceTree = "<group>"; };
+		6336E7BB1F9CD63000F5B15D /* TZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZHomeViewController.m; sourceTree = "<group>"; };
+		6336E7C01F9CDD3A00F5B15D /* TZGifForTactics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TZGifForTactics-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +97,7 @@
 		630680A81F88A3900047828A = {
 			isa = PBXGroup;
 			children = (
+				6336E7C01F9CDD3A00F5B15D /* TZGifForTactics-Prefix.pch */,
 				630680B31F88A3900047828A /* TZGifForTactics */,
 				630680D31F88A3900047828A /* TZGifForTacticsTests */,
 				630680B21F88A3900047828A /* Products */,
@@ -104,10 +118,12 @@
 		630680B31F88A3900047828A /* TZGifForTactics */ = {
 			isa = PBXGroup;
 			children = (
-				630680B41F88A3900047828A /* AppDelegate.h */,
-				630680B51F88A3900047828A /* AppDelegate.m */,
-				630680B71F88A3900047828A /* GameScene.sks */,
-				630680B91F88A3900047828A /* Actions.sks */,
+				6336E7B01F9CD5BE00F5B15D /* Category */,
+				6336E7A81F9CD5BD00F5B15D /* Controller */,
+				6336E7AE1F9CD5BE00F5B15D /* Model */,
+				6336E7A91F9CD5BE00F5B15D /* Others */,
+				6336E7AF1F9CD5BE00F5B15D /* Tool */,
+				6336E7A71F9CD5BD00F5B15D /* View */,
 				630680BB1F88A3900047828A /* GameScene.h */,
 				630680BC1F88A3900047828A /* GameScene.m */,
 				630680BE1F88A3900047828A /* GameViewController.h */,
@@ -128,6 +144,60 @@
 				630680D61F88A3900047828A /* Info.plist */,
 			);
 			path = TZGifForTacticsTests;
+			sourceTree = "<group>";
+		};
+		6336E7A71F9CD5BD00F5B15D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6336E7A81F9CD5BD00F5B15D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6336E7B91F9CD63000F5B15D /* TZBaseViewController.h */,
+				6336E7B71F9CD63000F5B15D /* TZBaseViewController.m */,
+				6336E7B61F9CD62F00F5B15D /* TZHomeViewController.h */,
+				6336E7BB1F9CD63000F5B15D /* TZHomeViewController.m */,
+				6336E7B81F9CD63000F5B15D /* TZLeftSettingController.h */,
+				6336E7BA1F9CD63000F5B15D /* TZLeftSettingController.m */,
+				6336E7B41F9CD62F00F5B15D /* TZTacticsController.h */,
+				6336E7B51F9CD62F00F5B15D /* TZTacticsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6336E7A91F9CD5BE00F5B15D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6336E7AA1F9CD5BE00F5B15D /* Actions.sks */,
+				6336E7AB1F9CD5BE00F5B15D /* AppDelegate.h */,
+				6336E7AC1F9CD5BE00F5B15D /* AppDelegate.m */,
+				6336E7AD1F9CD5BE00F5B15D /* GameScene.sks */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		6336E7AE1F9CD5BE00F5B15D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6336E7AF1F9CD5BE00F5B15D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6336E7B01F9CD5BE00F5B15D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		E9B2F7581AB243EC4745AB4E /* Frameworks */ = {
@@ -224,10 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				630680C31F88A3900047828A /* Main.storyboard in Resources */,
-				630680B81F88A3900047828A /* GameScene.sks in Resources */,
+				6336E7B11F9CD5BE00F5B15D /* Actions.sks in Resources */,
 				630680C51F88A3900047828A /* Assets.xcassets in Resources */,
+				6336E7B31F9CD5BE00F5B15D /* GameScene.sks in Resources */,
 				630680C81F88A3900047828A /* LaunchScreen.storyboard in Resources */,
-				630680BA1F88A3900047828A /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +367,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				630680BD1F88A3900047828A /* GameScene.m in Sources */,
+				6336E7BD1F9CD63000F5B15D /* TZBaseViewController.m in Sources */,
+				6336E7BC1F9CD63000F5B15D /* TZTacticsController.m in Sources */,
 				630680C01F88A3900047828A /* GameViewController.m in Sources */,
 				630680CB1F88A3900047828A /* main.m in Sources */,
-				630680B61F88A3900047828A /* AppDelegate.m in Sources */,
+				6336E7B21F9CD5BE00F5B15D /* AppDelegate.m in Sources */,
+				6336E7BE1F9CD63000F5B15D /* TZLeftSettingController.m in Sources */,
+				6336E7BF1F9CD63000F5B15D /* TZHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +526,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJ786Y9SWT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/tanzou/Desktop/TZGifForTactics/TZGifForTactics-Prefix.pch";
 				INFOPLIST_FILE = TZGifForTactics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Tanz.TZGifForTactics;
@@ -467,6 +543,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJ786Y9SWT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/tanzou/Desktop/TZGifForTactics/TZGifForTactics-Prefix.pch";
 				INFOPLIST_FILE = TZGifForTactics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Tanz.TZGifForTactics;

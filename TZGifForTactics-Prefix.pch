@@ -1,0 +1,15 @@
+//
+//  TZGifForTactics-Prefix.pch
+//  TZGifForTactics
+//
+//  Created by 檀邹 on 2017/10/22.
+//  Copyright © 2017年 Tanz. All rights reserved.
+//
+
+#ifndef TZGifForTactics_Prefix_pch
+#define TZGifForTactics_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TZGifForTactics_Prefix_pch */

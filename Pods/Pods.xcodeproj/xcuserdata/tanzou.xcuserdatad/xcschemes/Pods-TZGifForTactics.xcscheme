@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '527368383C7241BA1069E83F4AC98484'
+               BlueprintIdentifier = 'F22B6026253D863D9AB806A2657DD518'
                BlueprintName = 'Pods-TZGifForTactics'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-TZGifForTactics.a'>

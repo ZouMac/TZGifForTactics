@@ -1,17 +1,39 @@
 PODS:
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
 
 DEPENDENCIES:
+  - Mantle
+  - Masonry
   - MBProgressHUD
+  - MMDrawerController (= 0.5.7)
   - SDWebImage (= 3.7.2)
 
 SPEC CHECKSUMS:
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
-PODFILE CHECKSUM: ae218275cb018b80b82c395c34d961844228c56f
+PODFILE CHECKSUM: 90272934e65a07a8996be348d4be96c46e26b87b
 
 COCOAPODS: 1.4.0.beta.1

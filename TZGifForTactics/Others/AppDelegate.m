@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <MMDrawerController/MMDrawerController.h>
+#import "TZLeftSettingController.h"
+#import "TZTacticsController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //    1.创建窗口
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    //    2.设置根控制器
+    TZLeftSettingController * leftDrawer = [[TZLeftSettingController alloc] init];
+    UINavigationController * center = [[UINavigationController alloc] initWithRootViewController:[[TZTacticsController alloc] init]];
+    
+    TZLeftSettingController * rightDrawer = [[TZLeftSettingController alloc] init];
+    
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:center
+                                             leftDrawerViewController:leftDrawer
+                                             rightDrawerViewController:rightDrawer];
+    
+    //4、设置打开/关闭抽屉的手势
+    drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    drawerController.closeDrawerGestureModeMask =MMCloseDrawerGestureModeAll;
+    
+    self.window.rootViewController = drawerController;
+    
+    //    3.显示窗口!!!
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
