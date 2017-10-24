@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
+
+//- (NSString *)title{
+//    return @"创建战术";
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

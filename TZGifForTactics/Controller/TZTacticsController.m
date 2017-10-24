@@ -18,7 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (NSString *)title{
+    return @"创建战术";
 }
 
 - (void)didReceiveMemoryWarning {

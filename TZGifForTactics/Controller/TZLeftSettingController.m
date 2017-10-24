@@ -7,10 +7,15 @@
 //
 
 #import "TZLeftSettingController.h"
+#import "TZIconHeaderView.h"
+#import "TZSettingCell.h"
+#import "TZSettingModel.h"
 
 @interface TZLeftSettingController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) UITableView *tableView;
+
+@property (strong, nonatomic) NSArray *settingList;
 
 
 @end
@@ -22,26 +27,66 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     self.view.backgroundColor = [UIColor redColor];
+     self.view.backgroundColor = [UIColor blackColor];
     
     [self createTableView];
     
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)createTableView{
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView = tableView;
+    tableView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:tableView];
     tableView.delegate = self;
     tableView.dataSource = self;
     
-    tableView 
+    [tableView registerClass:[TZIconHeaderView class] forHeaderFooterViewReuseIdentifier:[TZIconHeaderView identifier]];
+    [tableView registerClass:[TZSettingCell class] forCellReuseIdentifier:[TZSettingCell identifier]];
+    
+    tableView.tableFooterView = [[UIView alloc] init];
+    
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
     
 }
 
 
 #pragma mark -
 #pragma mark - private
+
+
+#pragma mark -
+#pragma mark - lazy load
+- (NSArray *)settingList
+{
+    if (_settingList == nil) {
+    
+        TZSettingModel *home = [[TZSettingModel alloc] init];
+        home.icon = [UIImage imageNamed:@"icons8-Home"];
+        home.text = @"主页";
+        
+        TZSettingModel *message = [[TZSettingModel alloc] init];
+        message.icon = [UIImage imageNamed:@"icons8-Message"];
+        message.text = @"消息";
+        
+        TZSettingModel *contacts = [[TZSettingModel alloc] init];
+        contacts.icon = [UIImage imageNamed:@"icons8-Contacts"];
+        contacts.text = @"联系人";
+        
+        TZSettingModel *help = [[TZSettingModel alloc] init];
+        help.icon = [UIImage imageNamed:@"icons8-Help"];
+        help.text = @"帮助";
+        
+        _settingList = @[home,message,contacts,help];
+    }
+    return _settingList;
+}
 
 
 #pragma mark -
@@ -54,23 +99,41 @@
 //行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return self.settingList.count;
 }
 //初始化cell
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    TZSettingCell *cell = [TZSettingCell cellWithTableView:tableView];
+    cell.model = self.settingList[indexPath.row];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [TZSettingCell caculateHeight];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return [TZIconHeaderView caculateHeight];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    TZIconHeaderView *iconHeader = [[TZIconHeaderView alloc] init];
+    return iconHeader;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    });
+    
+    
 }
 
 /*

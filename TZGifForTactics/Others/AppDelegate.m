@@ -24,7 +24,7 @@
     //    1.创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    
+
     //    2.设置根控制器
     TZLeftSettingController * leftDrawer = [[TZLeftSettingController alloc] init];
     UINavigationController * center = [[UINavigationController alloc] initWithRootViewController:[[TZTacticsController alloc] init]];
