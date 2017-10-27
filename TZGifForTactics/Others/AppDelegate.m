@@ -10,6 +10,7 @@
 #import <MMDrawerController/MMDrawerController.h>
 #import "TZLeftSettingController.h"
 #import "TZTacticsController.h"
+#import "TZToolController.h"
 
 @interface AppDelegate ()
 
@@ -29,12 +30,13 @@
     TZLeftSettingController * leftDrawer = [[TZLeftSettingController alloc] init];
     UINavigationController * center = [[UINavigationController alloc] initWithRootViewController:[[TZTacticsController alloc] init]];
     
-    TZLeftSettingController * rightDrawer = [[TZLeftSettingController alloc] init];
+    TZToolController * rightDrawer = [[TZToolController alloc] init];
     
     MMDrawerController * drawerController = [[MMDrawerController alloc]
                                              initWithCenterViewController:center
                                              leftDrawerViewController:leftDrawer
                                              rightDrawerViewController:rightDrawer];
+    
     
     //4、设置打开/关闭抽屉的手势
     drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
